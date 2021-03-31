@@ -1,0 +1,36 @@
+{
+  "name": "zzq-promise",
+  "version": "1.0.0",
+  "description": "手写Promise",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "files": [
+    "lib",
+    "test"
+  ],
+  "devDependencies": {
+    "@types/node": "^14.14.37",
+    "promises-aplus-tests": "^2.1.2",
+    "typescript": "^4.2.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "node ./test/index.js && promises-aplus-tests ./test/standard.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zzq210218/aop.git"
+  },
+  "keywords": [
+    "promise",
+    "a+",
+    "手写Promise"
+  ],
+  "author": "小指<qingzz@qingzz.cn>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zzq210218/promise/issues"
+  },
+  "homepage": "https://github.com/zzq210218/promise#readme"
+}
